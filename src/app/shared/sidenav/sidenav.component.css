@@ -1,0 +1,31 @@
+/* card */
+.card {
+    background-color: inherit;
+    border: 0;
+    text-align: center;
+    transform: scale(0.9);
+    width: 0;
+}
+
+.card-img-top {
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 200px;
+}
+
+/* location section */
+.location-section {
+    border-bottom: 1px solid #050792;
+    border-top: 1px solid #050792;
+    padding: 1rem 0;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.location-title {
+    flex-grow: 1;
+    font-weight: 700;
+}

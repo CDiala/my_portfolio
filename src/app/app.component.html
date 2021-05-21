@@ -1,51 +1,61 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">History</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-</header>
-<section class="page-body">
-    <aside class="profile-container">
-        <section class="card" style="width: 18rem;">
-            <img src="../assets/images/default-profile-image.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Chibuzo Diala</h5>
-                <p class="card-text">Front-end developer</p>
+<div class="router-body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">History</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <!-- <h1>Bootstrap In Angular Using NPM Package Manager</h1> -->
-        <!-- <br>
-        <br> -->
-        <!-- <span class="badge rounded-pill bg-primary">Primary</span>
-        <span class="badge rounded-pill bg-secondary">Secondary</span>
-        <span class="badge rounded-pill bg-success">Success</span>
-        <span class="badge rounded-pill bg-danger">Danger</span>
-        <span class="badge rounded-pill bg-warning text-dark">Warning</span>
-        <span class="badge rounded-pill bg-info text-dark">Info</span>
-        <span class="badge rounded-pill bg-light text-dark">Light</span>
-        <span class="badge rounded-pill bg-dark">Dark</span> -->
-    </aside>
-    <main>
-        <router-outlet></router-outlet>
-    </main>
-</section>
+          </nav>
+    </header>
+    <section class="page-body">
+        <aside class="profile-container">
+            <section class="card" style="width: 18rem;">
+                <img src="../assets/images/default-profile-image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chibuzo Diala</h5>
+                    <p class="card-text">Front-end developer</p>
+                </div>
+            </section>
+            <section class="location-section">
+                <p class="location">
+                    <span class="location-title">State: </span>Lagos
+                </p>
+                <p class="location">
+                    <span class="location-title"> Country:</span>Nigeria
+                </p>
+            </section>
+            <!-- <h1>Bootstrap In Angular Using NPM Package Manager</h1> -->
+            <!-- <br>
+            <br> -->
+            <!-- <span class="badge rounded-pill bg-primary">Primary</span>
+            <span class="badge rounded-pill bg-secondary">Secondary</span>
+            <span class="badge rounded-pill bg-success">Success</span>
+            <span class="badge rounded-pill bg-danger">Danger</span>
+            <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+            <span class="badge rounded-pill bg-info text-dark">Info</span>
+            <span class="badge rounded-pill bg-light text-dark">Light</span>
+            <span class="badge rounded-pill bg-dark">Dark</span> -->
+        </aside>
+        <main class="profile-bowl">
+            <router-outlet></router-outlet>
+        </main>
+    </section>
+</div>

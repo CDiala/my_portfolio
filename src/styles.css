@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.navbar {
+    background: #5f249c!important;
+}
+
+.navbar-nav {
+    margin: 0!important;
+}
+
+#navbarSupportedContent {
+    justify-content: flex-end;
+}
+
+.navbar-brand {
+    color: #f1f1f1e6!important;
+}
+
+.nav-item, .navbar-brand {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #c8c0c0e6!important;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: white!important;
+    /* text-decoration: underline; */
+    transform: scale(1.2);
+}

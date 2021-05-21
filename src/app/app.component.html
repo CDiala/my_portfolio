@@ -24,19 +24,28 @@
         </div>
       </nav>
 </header>
-<aside>
-    <h1>Bootstrap In Angular Using NPM Package Manager</h1>    
-    <br>    
-    <br>    
-    <span class="badge rounded-pill bg-primary">Primary</span>    
-    <span class="badge rounded-pill bg-secondary">Secondary</span>    
-    <span class="badge rounded-pill bg-success">Success</span>    
-    <span class="badge rounded-pill bg-danger">Danger</span>    
-    <span class="badge rounded-pill bg-warning text-dark">Warning</span>    
-    <span class="badge rounded-pill bg-info text-dark">Info</span>    
-    <span class="badge rounded-pill bg-light text-dark">Light</span>    
-    <span class="badge rounded-pill bg-dark">Dark</span>  
-</aside>
-<main>
-    <router-outlet></router-outlet>
-</main>
+<section class="page-body">
+    <aside class="profile-container">
+        <section class="card" style="width: 18rem;">
+            <img src="../assets/images/default-profile-image.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chibuzo Diala</h5>
+                <p class="card-text">Front-end developer</p>
+            </div>
+        </section>
+        <!-- <h1>Bootstrap In Angular Using NPM Package Manager</h1> -->
+        <!-- <br>
+        <br> -->
+        <!-- <span class="badge rounded-pill bg-primary">Primary</span>
+        <span class="badge rounded-pill bg-secondary">Secondary</span>
+        <span class="badge rounded-pill bg-success">Success</span>
+        <span class="badge rounded-pill bg-danger">Danger</span>
+        <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+        <span class="badge rounded-pill bg-info text-dark">Info</span>
+        <span class="badge rounded-pill bg-light text-dark">Light</span>
+        <span class="badge rounded-pill bg-dark">Dark</span> -->
+    </aside>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+</section>

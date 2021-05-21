@@ -31,3 +31,36 @@
     /* text-decoration: underline; */
     transform: scale(1.2);
 }
+
+/* card */
+.card {
+    background-color: inherit;
+    border: 0;
+    text-align: center;
+    transform: scale(0.9);
+    width: 0;
+}
+
+.card-img-top {
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.page-body {
+    column-gap: 20px;
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+}
+
+aside {
+    background-color: grey;
+    /* padding: 1rem 2rem; */
+}
+
+.profile-container {
+    padding: 1rem 2rem;
+}

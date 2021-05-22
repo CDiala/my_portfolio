@@ -29,10 +29,49 @@
 
 .location {
     display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.location:last-of-type {
     margin-bottom: 0;
 }
 
 .location-title {
     flex-grow: 1;
     font-weight: 700;
+}
+
+/* list items */
+.tech--list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.tech--list-item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.tech--list-item::before {
+    content: '✓';
+    color: #ffc106;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.tech--list-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.cv-link {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.cv-link:hover {
+    color: white;
+    text-decoration: underline;
 }

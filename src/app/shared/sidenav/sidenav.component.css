@@ -59,19 +59,55 @@
     margin-right: 10px;
 }
 
-.tech--list-item:last-of-type {
+.tech--list-item:last-of-type,
+.social-media--list {
     margin-bottom: 0;
 }
 
 .cv-link {
-    color: black;
-    text-align: center;
+    color: #5c5b59;
+    /* text-align: center; */
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s;
 }
 
 .cv-link:hover {
-    color: white;
-    text-decoration: underline;
+    color: #ffc106;
+    /* text-decoration: underline; */
+}
+
+.cv-link:hover #Capa_1 {
+    fill: #ffc106;
+    /* text-decoration: underline; */
+}
+
+/* social media links */
+.social-media--list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.social-media--list-item {
+    list-style: none;
+}
+
+svg {
+    fill: #5c5b59;
+    transition: all 0.3s;
+}
+
+svg:hover {
+    fill: #ffc106;
+}
+
+.social-media--list-item {
+    width: 18px;
+}
+
+#Capa_1 {
+    position: relative;
+    top: -1px;
+    width: 15px;
 }

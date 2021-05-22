@@ -1,7 +1,7 @@
 .page-body {
     /* column-gap: 20px;
     display: flex; */
-    column-gap: 20px;
+    /* column-gap: 20px; */
     display: grid;
     grid-area: 2/1/3/3;
     grid-template-columns: 22rem 1fr;

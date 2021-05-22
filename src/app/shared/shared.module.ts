@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProgressCardComponent } from './progress-card/progress-card.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     SidenavComponent,
-    FooterComponent
+    FooterComponent,
+    ProgressCardComponent
   ],
   imports: [
     CommonModule

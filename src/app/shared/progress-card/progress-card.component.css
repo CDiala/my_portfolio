@@ -1,0 +1,13 @@
+.skill {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.skill-title {
+    flex-grow: 1;
+    font-weight: 700;
+}
+
+.skill-set {
+    margin-bottom: 10px;
+}

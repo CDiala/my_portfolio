@@ -33,3 +33,20 @@ aside {
 .profile-bowl {
     /* grid-area: 2/2/3/3; */
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .page-body {
+        /* grid-area: 2/1/3/3; */
+        grid-template-columns: 1fr;
+    }
+
+    .router-body, .header, .page-body, .profile-container, .profile-bowl {
+        width: 100vw;
+    }
+    
+    .profile-bowl {
+        padding: 1rem 2rem;
+    }
+}

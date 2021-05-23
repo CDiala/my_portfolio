@@ -1,0 +1,28 @@
+img {
+    /* background-image: url("../../../assets/images/pexels-negative-space-169573.jpg");
+    background-blend-mode: lighten; */
+    /* height: initial; */
+    width: 100%;
+}
+
+.block {
+    padding: 2rem;
+}
+
+.block--dark {
+    background-color: black;
+    color: rgb(196, 191, 191);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero--text {
+    align-self: center;
+    justify-self: center;
+}

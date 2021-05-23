@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProgressCardComponent } from './progress-card/progress-card.component';
+import { SkillCardComponent } from './skill-card/skill-card.component';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ProgressCardComponent } from './progress-card/progress-card.component';
     HeaderComponent,
     SidenavComponent,
     FooterComponent,
-    ProgressCardComponent
+    ProgressCardComponent,
+    SkillCardComponent
   ],
   imports: [
     CommonModule
@@ -19,7 +21,8 @@ import { ProgressCardComponent } from './progress-card/progress-card.component';
   exports: [
     HeaderComponent,
     SidenavComponent,
-    FooterComponent
+    FooterComponent,
+    SkillCardComponent
   ]
 })
 export class SharedModule { }

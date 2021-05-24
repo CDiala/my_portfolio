@@ -23,18 +23,25 @@ aside {
 .router-body {
     display: grid;
     grid-template-columns: 22rem 1fr;
-    grid-template-rows: 56px 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
 }
 
 .header {
     grid-area: 1/1/2/3;
 }
 
-.profile-bowl {
-    /* grid-area: 2/2/3/3; */
+.footer {
+    grid-area: 3/1/4/3;
+    width: 100vw;
 }
 
-
+.footer h2 {
+    font-size: 14px;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
     .page-body {

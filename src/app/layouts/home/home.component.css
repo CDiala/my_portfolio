@@ -41,15 +41,14 @@ img {
     text-align: center;
 }
 
-.skill__header::before {
+.skill__header::after {
     content: "";
-    border-bottom: 3px solid red;
-    width: 120px;
-    height: 1px;
-    display: block;
+    border-bottom: 3px solid #ffc106;
+    display: flex;
+    width: 150px;
     position: relative;
-    top: 46px;
-    left: 73px;
+    top: 18px;
+    right: calc(-50% + 75px);
 }
 
 .skill-wrapper {

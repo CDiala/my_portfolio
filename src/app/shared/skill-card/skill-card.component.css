@@ -1,10 +1,12 @@
 .card {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 0 3px 0px grey;
-    display: inline-flex;
+    /* display: inline-flex; */
     flex-direction: row;
+    flex-grow: 1;
     height: 90.28px;
     margin: 0.5rem;
+    /* width: calc((100vw - 352px - 4rem) / 4); */
     /* width: 18rem; */
 }
 
@@ -13,10 +15,41 @@
 }
 
 .card-img-top {
+    /* flex-grow: 1; */
     padding: 0.8rem;
     width: 90px;
 }
 
 .card-body {
     align-self: center;
+    padding: 0.7rem;
+    text-align: right;
+}
+
+.skill-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+@media screen and (max-width: 1397px) {
+    /* split the skill cards into 2 grid columns */
+    .skill-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 814px) {
+    .skill-wrapper {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 549px) {
+    .skill-wrapper {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

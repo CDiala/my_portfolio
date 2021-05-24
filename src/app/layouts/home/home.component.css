@@ -46,10 +46,10 @@ img {
     border-bottom: 3px solid red;
     width: 120px;
     height: 1px;
-    display: inline-flex;
+    display: block;
     position: relative;
-    top: 22px;
-    left: 96px;
+    top: 46px;
+    left: 73px;
 }
 
 .skill-wrapper {

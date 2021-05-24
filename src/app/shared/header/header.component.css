@@ -28,3 +28,10 @@
     /* text-decoration: underline; */
     transform: scale(1.2);
 }
+
+.active-link:focus,
+.active-link:active,
+.active-link {
+    color: red!important;
+    /* background-color: yellow; */
+}

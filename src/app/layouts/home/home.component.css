@@ -28,7 +28,7 @@ img {
 }
 
 .container {
-    margin: 4rem auto 2rem;
+    margin: 4rem auto 5rem;
 }
 
 @media screen and (max-width: 768px) {

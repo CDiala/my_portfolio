@@ -6,6 +6,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProgressCardComponent } from './progress-card/progress-card.component';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
     SidenavComponent,
     FooterComponent,
     ProgressCardComponent,
-    SkillCardComponent
+    SkillCardComponent,
+    TestimonialCardComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
     HeaderComponent,
     SidenavComponent,
     FooterComponent,
-    SkillCardComponent
+    SkillCardComponent,
+    TestimonialCardComponent
   ]
 })
 export class SharedModule { }

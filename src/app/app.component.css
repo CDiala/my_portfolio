@@ -37,20 +37,14 @@ aside {
     z-index: 9;
 }
 
-.footer {
-    bottom: 0;
+.page-footer {
+    /* bottom: 0; */
     grid-area: 3/1/4/3;
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
     /* width: 100%; */
 }
 
-.footer h2 {
-    font-size: 14px;
-    margin: 0;
-    padding: 1rem 0;
-    text-align: center;
-}
 
 @media screen and (max-width: 768px) {
     .page-body {

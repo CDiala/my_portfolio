@@ -1,11 +1,26 @@
 .card {
     height: 100%;
     margin: 0 auto;
-    max-width: 25rem;
+    max-width: 22rem;
 }
 
 .card-img-top {
     margin: 1rem auto;
     max-width: 18rem;
     width: 90%;
+}
+
+cite {
+    text-align: end;
+    display: block;
+}
+
+cite::before {
+    content: "___   ";
+    position: relative;
+    bottom: 6px;
+}
+
+.card-body {
+    padding: 1rem 2rem;
 }

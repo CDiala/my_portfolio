@@ -9,6 +9,7 @@ export class TestimonialCardComponent implements OnInit {
 
   @Input('image') img!: string
   @Input('text') content!: string
+  @Input('cite') citation!: string
   constructor() { }
 
   ngOnInit(): void {

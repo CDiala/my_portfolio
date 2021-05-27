@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProgressCardComponent } from './progress-card/progress-card.component';
 import { SkillCardComponent } from './skill-card/skill-card.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     FooterComponent,
     ProgressCardComponent,
     SkillCardComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    ProjectCardComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     SidenavComponent,
     FooterComponent,
     SkillCardComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    ProjectCardComponent
   ]
 })
 export class SharedModule { }

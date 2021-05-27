@@ -1,0 +1,67 @@
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0px grey;
+    transform: scale(1.05);
+}
+
+.card-body {
+    background-color: #403e3e;
+    color: white;
+    bottom: 0px;
+    margin-top: -32px;
+    opacity: 0;
+    overflow: hidden; 
+    position: absolute;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+}
+
+.card:hover .card-body {
+    overflow: inherit;
+    opacity: 1;
+    z-index: 9;
+}
+
+.card-img-top {
+    transition: all 0.35s;
+}
+
+.card:hover .card-img-top {
+    opacity: 0.1;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.location:last-of-type {
+    margin-bottom: 0;
+}
+
+.location-title {
+    flex-grow: 1;
+    font-weight: 700;
+}
+
+.project-info {
+    color: #f5c382;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-info::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-info:hover::after {
+    margin-left: 10px;
+}

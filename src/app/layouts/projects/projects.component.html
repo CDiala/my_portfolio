@@ -1,7 +1,7 @@
-<app-project-card 
-    url="#" 
+<app-project-card *ngFor="let project of projects"
+    url="{{ project.url }}" 
     image="../../../assets/images/website.svg"
-    title="Kluez Perfumery"
-    desc="Oil Perfume Store"
+    title="{{ project.name }}"
+    desc= "{{ project.desc }}"
     author="Chibuzo Diala">
 </app-project-card>

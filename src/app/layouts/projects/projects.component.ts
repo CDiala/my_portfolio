@@ -1,3 +1,4 @@
+import { GithubService } from './github.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  projects: any[] = [];
+  constructor(private gitService: GithubService) { }
 
   ngOnInit(): void {
+    // console.log("project component \n",this.gitService.getProjects());
+    this.projects = this.gitService.getProjects();
+    // console.log(this.projects);
   }
 
 }

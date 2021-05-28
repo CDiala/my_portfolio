@@ -5,13 +5,13 @@
     <div class="card-body">
         <p class="card-text location">
             <span class="location-title">Project Name: </span>
-            {{ title }} <br>
+            {{ title | trim }} <br>
         </p>
         <p class="card-text location">
-            <span class="location-title">Description:</span> {{ desc }} <br>
+            <span class="location-title">Description:</span> {{ desc | trim }} <br>
         </p>
         <p class="card-text location">
-            <span class="location-title">Creator: </span>{{ author }}
+            <span class="location-title">Creator: </span>{{ author | trim }}
         </p>
         <a class="project-info" [href]="url"  target="_blank">Learn more</a>
     </div>

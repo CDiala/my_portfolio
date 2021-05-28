@@ -11,8 +11,8 @@
 
 .card-body {
     background-color: #403e3e;
-    color: white;
     bottom: 0px;
+    color: white;
     margin-top: -32px;
     opacity: 0;
     overflow: hidden; 
@@ -22,8 +22,8 @@
 }
 
 .card:hover .card-body {
-    overflow: inherit;
     opacity: 1;
+    overflow: inherit;
     z-index: 9;
 }
 
@@ -57,8 +57,10 @@
 }
 
 .project-info::after {
-    content: "-->";
+    content: "→";
     margin-left: 5px;
+    position: relative;
+    top: 2px;
     transition: all 0.2s ease-in-out;
 }
 

@@ -67,6 +67,10 @@ img {
     /* grid-template-columns: repeat(2, 1fr); */
 }
 
+.skill-wrapper > * {
+    width: 100%;
+}
+
 @media screen and (max-width: 1397px) {
     /* split the skill cards into 2 grid columns */
     .skill-wrapper {

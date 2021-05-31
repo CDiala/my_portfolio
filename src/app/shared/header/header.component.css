@@ -32,6 +32,7 @@
 .active-link:focus,
 .active-link:active,
 .active-link {
-    color: red!important;
+    color: white!important;
+    font-weight: 600;
     /* background-color: yellow; */
 }

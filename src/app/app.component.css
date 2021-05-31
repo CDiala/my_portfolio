@@ -11,6 +11,7 @@
 
 .profile-bowl {
     flex-grow: 1;
+    padding: 1rem 2rem;
     /* overflow: scroll; */
 }
 

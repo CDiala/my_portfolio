@@ -1,3 +1,4 @@
+import { ContactComponent } from './layouts/contact/contact.component';
 import { GithubService } from './layouts/projects/github.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,19 +10,22 @@ import { HomeComponent } from './layouts/home/home.component';
 import { ProjectsComponent } from './layouts/projects/projects.component';
 import { SkillsComponent } from './layouts/skills/skills.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]

@@ -1,0 +1,33 @@
+<section class="block container contact-section">
+    <h2 class="contact__header">Reach Out</h2>
+    <div class="contact-wrapper">
+        <div class="input-group mb-3">
+            <label for="username" class="form-label">Username</label>
+            <span class="input-group-text" id="basic-addon1">
+                <fa-icon [icon]="faUser"></fa-icon>
+            </span>
+            <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        
+        <div class="input-group mb-3">
+            <label for="email" class="form-label">Email</label>
+            <span class="input-group-text">
+                <fa-icon [icon]="faEnvelop"></fa-icon>
+            </span>
+            <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Email" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="comment" class="form-label">Comment</label>
+            <span class="input-group-text">
+                <fa-icon [icon]="faComment"></fa-icon>
+            </span>
+            <textarea id="comment" class="form-control" aria-label="Message"></textarea>
+        </div>
+
+        <div class=" btnSubmit col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+
+    </div>
+</section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faMobile, faEnvelope, faUser, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidenav',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
+
+  faMobile = faMobileAlt;
+  faEnvelope = faEnvelope;
 
   constructor() { }
 

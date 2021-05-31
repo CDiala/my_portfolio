@@ -65,6 +65,10 @@
     margin-bottom: 0;
 }
 
+.cv-pdf {
+    text-align: center;
+}
+
 .cv-link {
     color: #5c5b59;
     /* text-align: center; */
@@ -94,13 +98,24 @@
     list-style: none;
 }
 
-svg {
+.social-media--list-item:nth-child(3) a,
+.social-media--list-item:nth-child(4) a {
+    color: #5c5b59;
+    font-size: 21px;
+}
+
+svg, .contact-me {
     fill: #5c5b59;
     transition: all 0.3s;
 }
 
-svg:hover {
+svg:hover{
     fill: #ffc106;
+}
+
+.social-media--list-item:nth-child(3):hover a,
+.social-media--list-item:nth-child(4):hover a {
+    color: #ffc106;
 }
 
 .social-media--list-item {

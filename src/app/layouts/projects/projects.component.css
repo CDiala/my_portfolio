@@ -1,3 +1,35 @@
+.block {
+    padding: 2rem;
+}
+
+.container {
+    margin: 4rem auto 5rem;
+}
+
+/* contact section */
+.project__header {
+    border-bottom: 1px solid rgb(180, 176, 176);
+    /* margin-top: 40px; */
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.project__header::after {
+    content: "";
+    border-bottom: 3px solid #ffc106;
+    display: flex;
+    width: 150px;
+    position: relative;
+    top: 18px;
+    right: calc(-50% + 75px);
+}
+
+.project__note {
+    font-size: 24px;
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

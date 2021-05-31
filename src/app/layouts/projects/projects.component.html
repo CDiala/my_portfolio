@@ -1,9 +1,13 @@
-<div class="grid">
-    <app-project-card *ngFor="let project of projects"
-        url="{{ project.url }}"
-        image="../../../assets/images/website.svg"
-        title="{{ project.name }}"
-        desc= "{{ project.desc }}"
-        author="Chibuzo Diala">
-    </app-project-card>
-</div>
+<section class="block container">
+    <h2 class="project__header">Projects</h2>
+    <p class="project__note">This section is integrated to GitHub API to retrieve all my starred projects.</p>
+    <div class="grid">
+        <app-project-card *ngFor="let project of projects"
+            url="{{ project.url }}"
+            image="../../../assets/images/website.svg"
+            title="{{ project.name }}"
+            desc= "{{ project.desc }}"
+            author="Chibuzo Diala">
+        </app-project-card>
+    </div>
+</section>

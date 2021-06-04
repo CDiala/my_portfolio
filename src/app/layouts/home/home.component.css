@@ -1,11 +1,9 @@
 .hero-image {
-    /* background-image: url("../../../assets/images/pexels-negative-space-169573.jpg");
-    background-blend-mode: lighten; */
-    /* height: initial; */
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
+    max-width: 90%;
+    width: 100%;
 }
 
 .block {

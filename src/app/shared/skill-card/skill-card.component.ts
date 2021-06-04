@@ -23,7 +23,7 @@ export class SkillCardComponent implements OnInit {
   getCount() {
     this.count = +this.content.split(' ')[0];
     this.extract = this.content.substring(this.content.indexOf(' '));
-    console.log('count:', this.count, 'extract:', this.extract);
+    // console.log('count:', this.count, 'extract:', this.extract);
     // console.log(this.content.split(' '));
     // console.log(this.content.split(' ').findIndex(char => char === ' '));
   }

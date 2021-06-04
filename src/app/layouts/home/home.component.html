@@ -3,7 +3,10 @@
 
 <section class="hero block block--dark">
     <div class="grid grid--cols-2">
-        <div class="hero--text">
+        <div 
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+        class="hero--text">
             <h1>Hi 🙋‍♂️!<br> 
                 I'm Chibuzo Diala. <br>
                 <!-- Welcome to my space. -->
@@ -13,23 +16,59 @@
         <picture class="hero-image">
             <source srcset="../../../assets/images/hero-image.webp 1x, ../../../assets/images/hero-image@2x.webp 2x" type="image/webp">
             <source srcset="../../../assets/images/hero-image.jpg 1x, ../../../assets/images/hero-image@2x.jpg 2x" type="image/jpg">
-            <img src="../../../assets/images/hero-image.jpg" alt="hero image">
+            <img 
+            data-aos="fade-right"
+            data-aos-anchor=".hero-image"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="2000"
+            src="../../../assets/images/hero-image.jpg" alt="hero image">
         </picture>
     </div>  
 </section>
 <section class="block container skill-section">
     <h2 class="skill__header">Skills</h2>
     <div class="skill-wrapper">
-        <app-skill-card content="1 year experience" image="../../../assets/images/experience-icon.svg"></app-skill-card>
-        <app-skill-card content="5 completed projects" image="../../../assets/images/website.svg"></app-skill-card>
-        <app-skill-card content="3 happy customers" image="../../../assets/images/trust.svg"></app-skill-card>
-        <app-skill-card content="2 awards" image="../../../assets/images/guarantee-award.svg"></app-skill-card>
+        <app-skill-card  
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        content="1 year experience" 
+        image="../../../assets/images/experience-icon.svg">
+        </app-skill-card>
+        <app-skill-card  
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        content="5 completed projects" 
+        image="../../../assets/images/website.svg">
+        </app-skill-card>
+        <app-skill-card  
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        content="3 happy customers" 
+        image="../../../assets/images/trust.svg">
+        </app-skill-card>
+        <app-skill-card  
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        content="2 awards" 
+        image="../../../assets/images/guarantee-award.svg">
+        </app-skill-card>
     </div>
 </section>
 <section class="block container testimonial">
     <h2 class="testimonial__header">Testimonial</h2>
     <div class="testimonial--cards">
-        <app-testimonial-card text="I was privileged to work with Chibuzo, and he is very efficient on the job, works with little or no supervision. I highly recommend him 👍 " cite="Jide" image="../../../assets/images/default-profile-image.png"></app-testimonial-card>
-        <app-testimonial-card text="If there's one exceptional staff I've met, it's Chibuzo. I highly recommend him - the people's choice 😊 " cite="Segun" image="../../../assets/images/default-profile-image.png"></app-testimonial-card>
+        <app-testimonial-card 
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        text="I was privileged to work with Chibuzo, and he is very efficient on the job, works with little or no supervision. I highly recommend him 👍 " cite="Jide" image="../../../assets/images/default-profile-image.png"></app-testimonial-card>
+        <app-testimonial-card 
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        text="If there's one exceptional staff I've met, it's Chibuzo. I highly recommend him - the people's choice 😊 " cite="Segun" image="../../../assets/images/default-profile-image.png"></app-testimonial-card>
     </div>
 </section>

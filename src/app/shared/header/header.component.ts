@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  visible:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  menuClicked() {
+    console.log("before click:", this.visible)
+    this.visible = !this.visible;
+    console.log("after click:", this.visible)
+  }
+
+  linkClicked() {
+    this.visible = false;
   }
 
 }

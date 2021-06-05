@@ -18,6 +18,11 @@
     margin: 0 1rem;
 }
 
+.nav-item {
+    padding: 10px 0;
+    border-bottom: 2px solid #ffc106;
+}
+
 .nav-link {
     color: #c8c0c0e6!important;
     transition: all 0.3s;
@@ -35,4 +40,38 @@
     color: white!important;
     font-weight: 600;
     /* background-color: yellow; */
+}
+
+/* .collapse .navbar-nav {
+    display: none;
+} */
+
+.expand .navbar-nav {
+    text-align: center;
+    width: 100%;
+}
+
+/* .navbar-nav {
+    width: auto;
+} */
+
+.expand.navbar-collapse {
+    display: flex;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+
+@media screen and (min-width: 992px) {
+    .expand .navbar-nav {
+        width: auto;
+        /* display: flex!important; */
+    }
+
+    .nav-item {
+        padding: 0;
+        border-bottom: 0;
+    }
 }

@@ -3,7 +3,7 @@
 }
 
 .container {
-    margin: 4rem auto 5rem;
+    margin: 4rem auto 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,8 +71,55 @@ input[type='text'] {
     text-align: center;
 }
 
-label[for='username'],
+label[for='name'],
 label[for='email'],
-label[for='comment'] {
+label[for='comment'],
+.input-group div {
     width: 100%;
 }
+
+label[for='name']::after,
+label[for='email']::after,
+label[for='comment']::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+
+.valid {
+    /* border: 2px solid green; */
+    border-left: 5px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+    border-left: 5px solid red;
+}
+
+.error,
+.required {
+    color: red;
+}
+
+/* .input-group-text.valid, */
+.input-group-text.invalid {
+    border-right: 1px solid rgb(206, 212, 218);
+}
+
+/* .form-control.valid, */
+.form-control.invalid {
+    border-left: 1px solid rgb(206, 212, 218);
+}
+
+.alert.alert-success {
+    text-align: center;
+}
+
+.input-group-text {
+    border-radius: 5px 0 0 5px;
+}
+
+/* .input-set:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+} */

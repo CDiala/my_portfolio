@@ -16,7 +16,7 @@ export class GithubService {
     this.http.get<GithubModel[]>(`${this.apiUrl}`).subscribe(data => {
       Object.keys(data).forEach(key => {
         // console.log(key);
-        this.projectArray.push({"name": data[+key].name, "desc": data[+key].description, "url": data[+key].html_url});
+        this.projectArray.push({"name": data[+key].name, "desc": data[+key].description, "url": data[+key].homepage});
       })
     })
     // console.log(this.projectArray);

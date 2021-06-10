@@ -1,33 +1,70 @@
 <section class="block container contact-section">
-    <h2 class="contact__header">Reach Out</h2>
-    <div class="contact-wrapper">
-        <div class="input-group mb-3">
-            <label for="username" class="form-label">Username</label>
-            <span class="input-group-text" id="basic-addon1">
-                <fa-icon [icon]="faUser"></fa-icon>
-            </span>
-            <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+    <h2 class="contact__header">Contact Me</h2>
+    <form [formGroup]="mailForm" class="contact-wrapper">
+        <div class="input-group mb-3 form-group">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-house"
+                [class.valid]="name?.touched && name?.valid"
+                [class.invalid]="name?.touched && name?.invalid"
+                [class.focused]="isFocused">
+                <span class="input-group-text" id="basic-addon1">
+                    <fa-icon [icon]="faUser"></fa-icon>
+                </span>
+                <input formControlName="name" type="text" id="name"
+                (click)="onFocus($event)"
+                (focusout)="onFocusOut($event)"
+                class="form-control"
+                placeholder="name" aria-label="name" aria-describedby="basic-addon1" required>
+            </div>
+            <div *ngIf="name?.touched && name?.invalid" class="error">Name is required.</div>
         </div>
         
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 form-group">
             <label for="email" class="form-label">Email</label>
-            <span class="input-group-text">
-                <fa-icon [icon]="faEnvelop"></fa-icon>
-            </span>
-            <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Email" required>
+            <div class="input-house"
+                [class.valid]="email?.touched && email?.valid"
+                [class.invalid]="email?.touched && email?.invalid"
+                [class.focusedE]="isFocusedE">
+                <span class="input-group-text">
+                    <fa-icon [icon]="faEnvelop"></fa-icon>
+                </span>
+                <input formControlName="email" id="email" type="email"
+                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                (click)="onFocus($event)"
+                (focusout)="onFocusOut($event)"
+                class="form-control"
+                placeholder="Email" aria-label="Email" required>
+            </div>
+            <div *ngIf="email?.touched && email?.invalid" class="error">
+                <div *ngIf="email?.errors?.required">Email is required.</div>
+                <div *ngIf="email?.errors?.pattern">Email format is incorrect.</div>
+            </div>
         </div>
         
-        <div class="input-group">
+        <div class="input-group form-group">
             <label for="comment" class="form-label">Comment</label>
-            <span class="input-group-text">
-                <fa-icon [icon]="faComment"></fa-icon>
-            </span>
-            <textarea id="comment" class="form-control" aria-label="Message" rows="10"></textarea>
+            <div class="input-house"
+                [class.valid]="comment?.touched && comment?.valid"
+                [class.invalid]="comment?.touched && comment?.invalid"
+                [class.focusedC]="isFocusedC">
+                <span class="input-group-text">
+                    <fa-icon [icon]="faComment"></fa-icon>
+                </span>
+                <textarea formControlName="comment"
+                (click)="onFocus($event)"
+                (focusout)="onFocusOut($event)"
+                id="comment" class="form-control" aria-label="Message" rows="6"  required>
+                </textarea>
+            </div>
+            <div *ngIf="comment?.touched && comment?.invalid" class="error">Please enter your message.</div>
         </div>
 
         <div class=" btnSubmit col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" type="submit" [disabled]="mailForm.invalid" 
+            (click)="onSubmit($event)" >Submit form</button>
         </div>
 
-    </div>
+        <div *ngIf="success" class="alert alert-success" role="alert">Thank you for reaching out. I will be in touch soon.</div>
+
+    </form>
 </section>

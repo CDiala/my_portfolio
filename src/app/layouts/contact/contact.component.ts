@@ -15,6 +15,9 @@ export class ContactComponent implements OnInit {
   faUser = faUser;
   faComment = faComment;
   success?: boolean;
+  isFocused: boolean = false;
+  isFocusedE: boolean = false;
+  isFocusedC: boolean = false;
 
   mailForm = new FormGroup({
     name: new FormControl('', Validators.required),
@@ -41,9 +44,20 @@ export class ContactComponent implements OnInit {
     console.log('hello', this.mailForm.value);
     this.success = true;
 
+    this.mailForm.reset();
     setTimeout(() => {
-      this.mailForm.reset();
       this.success = false;
     }, 5000) 
   }
+
+  onFocus($event: any) {
+    ($event.target.id === 'name') ? this.isFocused = true : ($event.target.id === 'email') ? this.isFocusedE = true : ($event.target.id === 'comment') ? this.isFocusedC = true : [this.isFocused = false, this.isFocusedE = false, this.isFocusedC = false];
+    // console.log("onClick", $event.target.id);
+  }
+
+  onFocusOut($event: any) {
+    ($event.target.id === 'name') ? this.isFocused = false : ($event.target.id === 'email') ? this.isFocusedE = false : ($event.target.id === 'comment') ? this.isFocusedC = false : null;
+    // console.log("onClick", $event.target.id);
+  }
+
 }

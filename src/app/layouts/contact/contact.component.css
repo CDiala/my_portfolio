@@ -12,8 +12,6 @@
     }
 }
 
-
-/* contact section */
 .contact__header {
     border-bottom: 1px solid rgb(180, 176, 176);
     margin-bottom: 3rem;
@@ -33,7 +31,6 @@
 
 .contact-wrapper {
     display: grid;
-    /* justify-content: space-evenly; */
     grid-template-columns: 1fr;
     row-gap: 20px;
 }
@@ -49,14 +46,12 @@
 
 @media screen and (max-width: 814px) {
     .contact-wrapper {
-        /* display: grid; */
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media screen and (min-width: 549px) {
     .contact-wrapper {
-        /* display: grid; */
         grid-template-columns: 1fr;
     }
 }
@@ -81,20 +76,21 @@ label[for='comment'],
 label[for='name']::after,
 label[for='email']::after,
 label[for='comment']::after {
-    content: '*';
     color: red;
-    margin-left: 5px;
+    content: '*';
+    margin-left: 4px;
     vertical-align: text-top;
 }
 
 .valid {
-    /* border: 2px solid green; */
-    border-left: 5px solid green;
+    border-left: 4px solid green!important;
+    border-top-left-radius: 7px!important;
+    border-bottom-left-radius: 7px!important;
 }
 
 .invalid {
-    border: 2px solid red;
-    border-left: 5px solid red;
+    border: 1px solid red!important;
+    border-left-width: 4px!important;
 }
 
 .error,
@@ -102,24 +98,39 @@ label[for='comment']::after {
     color: red;
 }
 
-/* .input-group-text.valid, */
-.input-group-text.invalid {
-    border-right: 1px solid rgb(206, 212, 218);
+.form-control {
+    border-left: 0;
 }
 
-/* .form-control.valid, */
-.form-control.invalid {
-    border-left: 1px solid rgb(206, 212, 218);
+.form-control:focus {
+    box-shadow: none;
 }
 
 .alert.alert-success {
     text-align: center;
 }
 
-.input-group-text {
-    border-radius: 5px 0 0 5px;
+.input-house {
+    border-radius: 4px!important;
+    border-radius: 5px;
+    border: 1px solid #d0c9cb;
+    display: flex;
+    overflow: hidden;
 }
 
-/* .input-set:focus {
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-} */
+.input-house:focus {
+    border-color: #86b7fe!important;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.input-group-text, .form-control {
+    border-radius: 0;
+    border: 0;
+}
+
+.input-house.focused,
+.input-house.focusedE,
+.input-house.focusedC {
+    border-color: #86b7fe!important;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}

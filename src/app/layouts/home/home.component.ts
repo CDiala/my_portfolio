@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  countExperience: number = new Date().getFullYear() - 2020;
+
+  constructor() {}
 
   ngOnInit(): void {
   }
+
 
 }
